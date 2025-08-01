@@ -1,23 +1,25 @@
 def Edad_usuario (Edad):
     """
-   Esta función toma la edad del usuario.
+   Esta función toma la edad del usuario y define si es mayor de edad, joven adulto o mayor de edad.
 
    Args:
-       Edad (int): El primer valor.
+       Edad (int): valor numérico insertado por el usuario.
 
    Returns:
-       int: Edad del usuario.
+       str: Resouesta (Es la validación de la edad)
        """
-    return  Edad
+
+    Respuesta = ""
+
+    if Edad < 18:
+        Respuesta = (f"Su edad es: {Edad} Es menor de edad")
+    elif Edad >= 18 and Edad <= 25:
+        Respuesta = (f"Su edad es: {Edad} Es un joven adulto")
+    else:
+        Respuesta = (f"Su edad es: {Edad} Es mayor de edad")
+
+    return  Respuesta
 
 Edad = int(input("Ingrese su edad: "))
-
-result = Edad_usuario(Edad)
-
-if result < 18 :
-    print(f"Su edad es: {result} Es menor de edad")
-elif result >= 18 and result <= 25  :
-    print(f"Su edad es: {result} Es un joven adulto")
-else:
-    print(f"Su edad es: {result} Es mayor de edad")
+print(Edad_usuario(Edad))
 
