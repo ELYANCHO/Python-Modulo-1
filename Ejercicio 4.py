@@ -9,6 +9,6 @@ def tabla_de_multiplicar(numero):
     resultado = numero * i
     print(f"{numero} x {i} = {resultado}")
 
-numero_usuario = int(input("Ingrese un número para generar la tabla de multiplicar: "))
+numero = int(input("Ingrese un número para generar la tabla de multiplicar: "))
 
-tabla_de_multiplicar(numero_usuario)
+tabla_de_multiplicar(numero)
