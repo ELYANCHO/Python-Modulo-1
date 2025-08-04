@@ -4,7 +4,7 @@ def agenda_contactos():
     que permite agregar, buscar y mostrar contactos.
 
     No recibe parámetros de entrada.
-    Retorna:
+    Returns:
         dict: El diccionario completo de contactos al finalizar.
     """
     agenda = {}
